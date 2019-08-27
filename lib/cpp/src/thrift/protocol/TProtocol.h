@@ -560,8 +560,8 @@ public:
   // input and output recursion depth are kept separate so that one protocol
   // can be used concurrently for both input and output.
   void incrementInputRecursionDepth() {
-    printf("incrementInputRecursionDepth max: %d\n", recursion_limit_);
-    printf("input_recursion_depth_: %d\n", input_recursion_depth_);
+    //printf("incrementInputRecursionDepth max: %d\n", recursion_limit_);
+    //printf("input_recursion_depth_: %d\n", input_recursion_depth_);
     if (recursion_limit_ < ++input_recursion_depth_) {
       //throw TProtocolException(TProtocolException::DEPTH_LIMIT);//wanghuan fix
     }
